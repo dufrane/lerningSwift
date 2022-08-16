@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MagicBall" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Stardust" translatesAutoresizingMaskIntoConstraints="NO" id="f8w-Pv-pyb">
+                                <rect key="frame" x="-390" y="0.0" width="1193" height="896"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.63529411759999999" blue="0.3916131504" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball1" translatesAutoresizingMaskIntoConstraints="NO" id="Lrz-QW-fxg">
+                                <rect key="frame" x="20" y="259" width="374" height="378"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="378" id="2er-Fa-nUQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ask me anything ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Q7-ox-PgW">
+                                <rect key="frame" x="53" y="125" width="308" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMn-jr-NJ2">
+                                <rect key="frame" x="129" y="748" width="156" height="57"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="67x-iI-c2e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Ask">
+                                    <color key="titleColor" red="0.1291369568433994" green="0.11332717660461426" blue="0.54213360042283032" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="askButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h2F-As-SSc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Lrz-QW-fxg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1wl-YX-98g"/>
+                            <constraint firstItem="Lrz-QW-fxg" firstAttribute="centerX" secondItem="7Q7-ox-PgW" secondAttribute="centerX" id="9JF-Vk-IP4"/>
+                            <constraint firstItem="eMn-jr-NJ2" firstAttribute="centerX" secondItem="f8w-Pv-pyb" secondAttribute="centerX" id="C5i-h8-tNg"/>
+                            <constraint firstItem="Lrz-QW-fxg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Fnx-bJ-Nwi"/>
+                            <constraint firstItem="Lrz-QW-fxg" firstAttribute="top" secondItem="7Q7-ox-PgW" secondAttribute="bottom" constant="73" id="GTT-Ly-dPH"/>
+                            <constraint firstItem="Lrz-QW-fxg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="XQB-jp-uuy"/>
+                            <constraint firstItem="Lrz-QW-fxg" firstAttribute="centerY" secondItem="f8w-Pv-pyb" secondAttribute="centerY" id="bjL-Ny-5GX"/>
+                            <constraint firstItem="Lrz-QW-fxg" firstAttribute="centerX" secondItem="eMn-jr-NJ2" secondAttribute="centerX" id="cw7-FJ-KyX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eMn-jr-NJ2" secondAttribute="bottom" constant="57" id="oM9-Vj-dIE"/>
+                            <constraint firstItem="eMn-jr-NJ2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="129" id="uNe-SM-jQH"/>
+                            <constraint firstItem="Lrz-QW-fxg" firstAttribute="centerX" secondItem="f8w-Pv-pyb" secondAttribute="centerX" id="zZ7-Su-tzk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Lrz-QW-fxg" id="42d-JJ-Adg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15.942028985507248" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Stardust" width="1193" height="845"/>
+        <image name="ball1" width="305" height="273.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
